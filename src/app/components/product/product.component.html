@@ -1,0 +1,20 @@
+<div class="productcontainer">
+
+  <div *ngFor="let item of data">
+    <!-- card componentss -->
+    <div class="card" >
+      <img  [src] ="item.image" width="50" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{item.title}}</h5>
+        <p >{{item.description.substr(1,10)}}</p>
+        <span>category: {{item.category}}</span>
+        <div>   <span> Price{{item.price| currency :"INR"}}</span>
+        </div>
+        <div>
+          <a href="#" class="btn btn-primary">ADD TO CART</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

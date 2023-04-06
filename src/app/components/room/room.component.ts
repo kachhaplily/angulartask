@@ -13,7 +13,7 @@ export class RoomComponent implements OnInit{
 
   roomlist:Roomlist[]=[];
   HotelName:string="Hilton Hotel"
-  constructor(private roomservice:RoomsService){
+  constructor( private roomservice:RoomsService){
 
   }
 

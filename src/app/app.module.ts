@@ -8,6 +8,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RoomListTblComponent } from './components/room-list-tbl/room-list-tbl.component';
 import { RoomListTblHeadingComponent } from './components/room-list-tbl-heading/room-list-tbl-heading.component';
 import { RoomtblComponent } from './components/roomtbl/roomtbl.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ProductComponent } from './components/product/product.component';
+
 
 @NgModule({
   declarations: [
@@ -16,12 +19,13 @@ import { RoomtblComponent } from './components/roomtbl/roomtbl.component';
     RoomListTblComponent,
     RoomListTblHeadingComponent,
     RoomtblComponent,
+    ProductComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
