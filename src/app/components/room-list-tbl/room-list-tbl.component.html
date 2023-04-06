@@ -1,0 +1,13 @@
+
+<tbody>
+  <tr *ngFor="let item of tabeldata">
+    <td>{{item.roomnumber}}</td>
+    <td>{{item.roomtype}}</td>
+    <td>{{item.ameninites}}</td>
+     <td>{{item.price|currency :"INR"}}</td>
+     <td><img [src] ="item.photos" width="200px"></td>
+     <td>{{item.checkin |date:"short"}}</td>
+     <td>{{item.checkout | date:"short"}}</td>
+     <td><button (click)="showdata(item)">show data</button></td>
+  </tr>
+</tbody>
