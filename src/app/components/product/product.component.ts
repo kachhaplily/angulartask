@@ -6,9 +6,9 @@ import { ProductserviceService } from './Service/productservice.service';
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.css']
 })
-export class ProductComponent implements OnInit{
-  data:any[]=[];
-  constructor(private myService: ProductserviceService){
+export class ProductComponent implements OnInit {
+  data: any[] = [];
+  constructor(private myService: ProductserviceService) {
 
   }
   ngOnInit(): void {
